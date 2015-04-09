@@ -131,6 +131,25 @@
   font-weight: 900;
   font-style: normal;
 }
+/*
+
+HumHub Theme Style CSS
+Refer: HumHub Style CSS (/css/style.less)
+
+Table of Bootstrap modifications:
+---------------------------------------------
+1) General
+2) Topbar (replaces the Bootstrap Navbar)
+3) Navs (Nav-Tabs & Nav-Pills)
+4) Media Object
+5) Panels
+6) Pagination
+7) Yii Components
+8) HumHub Components
+9) Third Party Tools
+10) Responsive modifications
+
+*/
 html,
 body {
   min-height: 100%;
@@ -138,8 +157,10 @@ body {
 }
 body {
   font-family: "Open Sans", sans-serif;
-  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
   -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
 }
 h1,
 h2,
@@ -168,40 +189,11 @@ p.small {
 p.legal {
   font-size: 11px;
 }
-.clear {
-  *zoom: 1;
-}
-.clear:after,
-.clear:before {
-  content: "";
-  display: table;
-}
-.clear:after {
-  clear: both;
-}
-.hide-text {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
 hr {
   width: 95%;
 }
 hr.subrule {
   width: 85%;
-}
-img {
-  border: none;
-}
-img.responsive {
-  max-width: 100%;
-  height: auto;
-}
-.left {
-  float: left;
-}
-.right {
-  float: right;
 }
 .heading {
   background-color: #4b2e83;
@@ -284,8 +276,6 @@ input[type=select] {
 #topbar-second {
   background-color: #ffffff;
   background-image: none;
-  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #d4d4d4;
 }
@@ -552,8 +542,6 @@ input[type=select] {
   font-size: 11px;
 }
 .img-rounded {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 .nav-pills .dropdown-menu,
@@ -615,8 +603,6 @@ input[type=select] {
 .popover {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 .popover .popover-title {
@@ -930,7 +916,6 @@ a.list-group-item.active:focus {
 }
 .progress-bar-info {
   background-color: #b7a57a;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .tooltip-inner {
@@ -1058,7 +1043,6 @@ table td a:hover {
   margin-left: 90px;
 }
 ul.tag_input {
-  -webkit-box-shadow: none;
   box-shadow: none;
   border: 2px solid #4b2e83;
 }
@@ -1184,18 +1168,15 @@ ul.tour-list li.completed a {
 .modal-dialog.fadeIn,
 .modal-dialog.pulse {
   -webkit-animation-duration: 200ms;
-  -moz-animation-duration: 200ms;
   animation-duration: 200ms;
 }
 .panel.pulse,
 .panel.fadeIn {
   -webkit-animation-duration: 200ms;
-  -moz-animation-duration: 200ms;
   animation-duration: 200ms;
 }
 img.bounceIn {
   -webkit-animation-duration: 800ms;
-  -moz-animation-duration: 800ms;
   animation-duration: 800ms;
 }
 .outside .text {
@@ -1226,37 +1207,6 @@ img.bounceIn {
 .markdown-render a,
 .markdown-render a:visited {
   color: #b7a57a !important;
-}
-.btn {
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  background-image: none;
-  text-shadow: none;
-  border-radius: 3px;
-  outline: none !important;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 8px 16px;
-}
-.input.btn {
-  outline: none;
-}
-.btn-lg {
-  padding: 16px 28px;
-}
-.btn-sm {
-  padding: 4px 8px;
-  font-size: 12px;
-}
-.btn-sm i {
-  font-size: 14px;
-}
-.btn-xs {
-  padding: 1px 5px;
-  font-size: 12px;
 }
 .btn-default {
   background: #4b2e83;
@@ -1409,3 +1359,4 @@ img.bounceIn {
 .btn-warning[disabled].active {
   background: #fddcb1;
 }
+/*# sourceMappingURL=theme.css.map */
