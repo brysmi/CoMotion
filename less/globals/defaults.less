@@ -1,5 +1,27 @@
-// Default Styles
-// Description: Set all default general styles and classes here
+/*
+
+HumHub Theme Style CSS
+Refer: HumHub Style CSS (/css/style.less)
+
+Table of Bootstrap modifications:
+---------------------------------------------
+1) General
+2) Topbar (replaces the Bootstrap Navbar)
+3) Navs (Nav-Tabs & Nav-Pills)
+4) Media Object
+5) Panels
+6) Pagination
+7) Yii Components
+8) HumHub Components
+9) Third Party Tools
+10) Responsive modifications
+
+*/
+
+//
+// 1) General
+// --------------------------------------------------
+
 
 html,
 body {
@@ -9,8 +31,8 @@ body {
 
 body {
   font-family              : @font-family-base;
-  -webkit-font-smoothing   : subpixel-antialiased;
-  -webkit-text-size-adjust : none;
+  font-smoothing   : subpixel-antialiased;
+  text-size-adjust : none;
 }
 
 h1,h2,h3,h4,h5 {
@@ -37,24 +59,6 @@ p {
   }
 }
 
-.clear {
-  &:after,
-  &:before {
-    content                 : "";
-    display                 : table;
-  }
-  &:after {
-    clear                   : both;
-  }
-  *zoom                     : 1;
-}
-
-.hide-text {
-  text-indent               : 100%;
-  white-space               : nowrap;
-  overflow                  : hidden;
-}
-
 hr {
   width                     : 95%;
   &.subrule {
@@ -62,64 +66,13 @@ hr {
   }
 }
 
-img {
-  border                    : none;
-  &.responsive {
-    max-width               : 100%;
-    height                  : auto;
-  }
-}
-
-.left {
-  float                     : left;
-}
-
-.right {
-  float                     : right;
-}
-
-// UW/RP Mixins
-// RP STYLE
 .heading {
   background-color          : @brand-primary;
   color                     : @brand-secondary;
 }
 
-
-
-
 //=HumHub Theme Defaults Here
 //---------------------------
-
-// body {
-//   background-color: @colorBackground2;
-//   color: #777777;
-//   font-family: 'Open Sans',sans-serif;
-
-//   a,a:hover,a:focus,a:active,a.active {
-//     color: @colorFont3;
-//     text-decoration: none;
-//   }
-
-// }
-
-// h4 {
-//   font-weight: 300;
-//   //color: @colorFont4;
-//   font-size: 150%;
-// }
-
-// Mixins
-// .heading {
-//   font-size: 16px;
-//   font-weight: 300;
-//   color: @colorFont3;
-//   background-color: white;
-//   border: none;
-//   padding: 10px;
-// }
-
-
 
 .text-center {
   text-align                : center !important;
@@ -304,7 +257,7 @@ input[type=select] {
 }
 
 //
-// x) Media-Object
+// 4) Media-Object
 // --------------------------------------------------
 .media-list {
 
@@ -443,7 +396,7 @@ input[type=select] {
 }
 
 //
-// x) Panels
+// 5) Panels
 // --------------------------------------------------
 
 .panel {
@@ -503,6 +456,13 @@ input[type=select] {
   }
 
 }
+
+// .panel-profile {
+//       .profile-user-photo {
+//         // border: 3px solid #fff;
+//         border-radius: 50% !important; // affects img-circle
+//       }
+// }
 
 .panel-danger {
   border: 2px solid @colorDanger;
@@ -613,7 +573,7 @@ input[type=select] {
 }
 
 //
-// x) Navs
+// 3) Navs (Nav-Tabs & Nav-Pills)
 // --------------------------------------------------
 
 .nav-pills,
@@ -1008,7 +968,7 @@ a.list-group-item.active:focus {
 }
 
 //
-// Modal
+// Modals
 // --------------------------------------------------
 .modal {
   border: none;
@@ -1403,18 +1363,23 @@ ul.tour-list {
 // 7) Yii Components
 // --------------------------------------------------
 
-// Errror handling
+// Error handling
 .errorMessage {
   color: @colorDanger;
 }
 
-// Errror handling
+// Error handling
 .error {
   border-color: @colorDanger !important;
 }
 
 //
-// x) Third Party Tools
+// 8) HumHub Components
+// --------------------------------------------------
+
+
+//
+// 9) Third Party Tools
 // --------------------------------------------------
 
 // Highlight
@@ -1550,3 +1515,8 @@ img.bounceIn {
   }
 
 }
+
+//
+// 10) Responsive modifications
+// --------------------------------------------------
+
